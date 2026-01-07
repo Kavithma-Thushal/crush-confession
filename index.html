@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crush Confession 💗</title>
+    <!-- Google Font -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff9acb, #ffc1dd);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .card {
+            background: #fff;
+            width: 90%;
+            max-width: 500px;
+            padding: 40px 25px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            color: #ff4f9a;
+            font-size: 34px;
+            margin-bottom: 20px;
+        }
+
+        .question {
+            font-size: 26px;
+            font-weight: 600;
+            color: #ff2f7d;
+            margin-bottom: 30px;
+            min-height: 80px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        button {
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .yes {
+            background: #ff4f9a;
+            color: #fff;
+        }
+
+        .no {
+            background: #ffd1e6;
+            color: #ff2f7d;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        .result {
+            display: none;
+            font-family: 'Pacifico', cursive;
+            font-size: 36px;
+            color: #ff2f7d;
+            animation: pop 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes pop {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.05);
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="card">
+    <h1>Hey You 💕</h1>
+
+    <div class="question"></div>
+
+    <div class="buttons">
+        <button class="yes">Yes 💖</button>
+        <button class="no">No 🙈</button>
+    </div>
+
+    <div class="result"></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    const questions = [
+        "Do you smile when you see me? 😊",
+        "Do you like talking with me? 💬💖",
+        "Do I make your day better? 🌈✨",
+        "Do you feel special with me? 🥰",
+        "Can I be someone special to you? 💘"
+    ];
+
+    let index = 0;
+    let yesCount = 0;
+
+    function showQuestion() {
+        $(".question").fadeOut(300, function () {
+            $(this).text(questions[index]).fadeIn(300);
+        });
+    }
+
+    showQuestion();
+
+    $(".yes").click(function () {
+        yesCount++;
+        nextQuestion();
+    });
+
+    $(".no").click(function () {
+        nextQuestion();
+    });
+
+    function nextQuestion() {
+        index++;
+
+        if (index < questions.length) {
+            showQuestion();
+        } else {
+            $(".question, .buttons").hide();
+
+            if (yesCount >= 3) {
+                $(".result").html("You like me 💖🥰<br>My heart is smiling 💕").fadeIn();
+            } else {
+                $(".result").html("You don’t like me 💔<br>But you’re still special 🌸").fadeIn();
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
