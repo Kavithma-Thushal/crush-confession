@@ -1,11 +1,9 @@
 # 💗 Crush Confession 💗
 
-A sweet, romantic, and interactive web experience made especially for your **crush** 💕This project presents **5 cute
-Yes / No questions**, displayed **one by one** with big fonts, emojis, and a beautiful pink-themed design. It’s not a
-form — it’s a fun, emotional journey where your crush clicks their answers, and at the end, the page reveals a lovely
-message saying **“You like me 💖”** or **“You don’t like me 💔”** in a soft and respectful way.
-
-This project is designed to express feelings creatively using simple web technologies and animations.
+A sweet, romantic, and interactive web experience made especially for your **crush**💕 This project presents cute Yes /
+No questions, displayed one by one with big fonts, emojis, and a beautiful pink-themed design. It’s emotional journey
+where your crush clicks their answers, and at the end, the page reveals a lovely message saying “You like me 💖” or “You
+don’t like me 💔” in a soft and respectful way.
 
 ## 🛠️ Technologies
 
@@ -16,7 +14,7 @@ This project is designed to express feelings creatively using simple web technol
 ## 🚀 Features
 
 ✅ Pink-themed romantic UI with smooth gradients and soft colors.<br/>
-✅ 5 Cute Crush Questions displayed one-by-one (not a form).<br/>
+✅ 5 Cute Crush Questions displayed one-by-one.<br/>
 ✅ Big fonts, emojis, and playful buttons for a lovely experience.<br/>
 ✅ Yes / No interaction with smooth fade animations.<br/>
 ✅ Automatic result decision based on answers.<br/>
