@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9acb, #ffc1dd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    background: #fff;
+    width: 90%;
+    max-width: 500px;
+    padding: 40px 25px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: #ff4f9a;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.question {
+    font-size: 26px;
+    font-weight: 600;
+    color: #ff2f7d;
+    margin-bottom: 30px;
+    min-height: 80px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.yes {
+    background: #ff4f9a;
+    color: #fff;
+}
+
+.no {
+    background: #ffd1e6;
+    color: #ff2f7d;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.result {
+    display: none;
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
+    color: #ff2f7d;
+    animation: pop 1s ease-in-out infinite alternate;
+}
+
+@keyframes pop {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
