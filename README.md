@@ -10,7 +10,7 @@ like me 💔” in a soft and respectful way.
 ✅ HTML<br/>
 ✅ CSS<br/>
 ✅ JS<br/>
-✅ JQuery<br/>
+✅ jQuery<br/>
 
 ## 🚀 Features
 
